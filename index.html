@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hangman </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <link rel="stylesheet" href="bootstrap.css" /> -->
+	<link rel="stylesheet" href="style.css" />
+	
+</head>
+	
+<body>
+	<h1> Hangman Challenge </h1>
+
+	<h3> Select difficulty </h3>
+
+	<button id="buttonLevelEasy" type="submit" onclick="chooseLevelEasy()"> Easy </button>
+
+	<button id="buttonLevelHard" type="submit" onclick="chooseLevelHard()"> Hard </button>
+
+	<button id="buttonLevelImpossible" type="submit" onclick="chooseLevelImpossible()"> Impossible </button>
+
+	<p> Game mode selected : <strong><span id="levelSelected"> </span></strong></p>
+
+	<button id="initialization" class="hide" type="submit" onclick="initialization()"> Start Game </button>
+
+	<div id="gameBody" class="hide">
+		<h3> Guess Word/Answer </h3>
+		<div id="displayAnswer"> </div>
+		<p><strong><span id="chancesRem" style="color:blue">0 </span></strong> Guesses left till you lose! </p>
+
+		<div id="inputArea">
+			<h3> Input field </h3>
+			<input id="playerEntry" type="text" placeholder="Good Luck!!"> 
+			<button id="userSubmission" type="submit" onclick="checkLetter()"> GUESS! </button>
+		</div>
+
+		<h3> Guessed Letter </h3>
+		<ul id="guessedLetter"></ul>
+	</div>
+
+
+
+
+	<script src="javascript.js"> </script>
+</body>
+</html>
